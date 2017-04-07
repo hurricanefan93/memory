@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Square from './Square'
+import Modal from './Modal'
 
 class Board extends Component {
 
@@ -35,7 +36,7 @@ class Board extends Component {
             matched: [],
             gameOver: true
           })
-        }, 3000)
+        }, 1800)
       }
     })
     }
@@ -43,11 +44,14 @@ class Board extends Component {
       this.setState({
         picks: []
       })
-    }, 1800)
+    }, )
   }
 
 
   render () {
+    if (this.state.gameOver) {
+      return <Modal/>
+    } else {
     return (
       <div className='memorygame'>
       <Square index={0} move={this.state.moves[0]} checkCard={this.checkCard} hidden={!this.state.picks.includes(0)} matched={this.state.matched.includes(0)} />
@@ -67,9 +71,9 @@ class Board extends Component {
       <Square index={14} move={this.state.moves[14]} checkCard={this.checkCard} hidden={!this.state.picks.includes(14)} matched={this.state.matched.includes(14)} />
       <Square index={15} move={this.state.moves[15]} checkCard={this.checkCard} hidden={!this.state.picks.includes(15)} matched={this.state.matched.includes(15)} />
       </div>
-  )
+      )
+    }
   }
-
 }
 
 export default Board

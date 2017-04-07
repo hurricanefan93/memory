@@ -1,15 +1,15 @@
-import React from {Component} from 'react'
+import React, {Component} from 'react'
 
 class Modal extends Component {
 
-render() {
+render () {
   return (
     <div className='overlay'>
       <div className='dialog'>
-      <h3>GAME OVER</h3>
-      <button>Play Again</button>
+        <h3>GAME OVER</h3>
+        <button>Play Again</button>
+      </div>
     </div>
-  </div>
   )
 }
 }
