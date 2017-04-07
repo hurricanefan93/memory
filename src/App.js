@@ -5,11 +5,11 @@ class App extends Component {
 
   render() {
     return (
-      <div className='App'>
-        <Board />
-      </div>
+        <div className='memorygame'>
+          <Board />
+        </div>
     )
   }
 }
 
-export default App;
+export default App

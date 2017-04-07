@@ -3,12 +3,15 @@ import React, { Component } from 'react'
 class Square extends Component {
 
   _click = () => {
-    this.props.flipCard(this.props.index)
+    this.props.checkCard(this.props.index)
     }
 
   render() {
-      const revealed = this.props.revealed ? 'revealed' : ''
-      return <div id='card' className={`${this.props.value} memorysquare ${revealed}`} onClick={this._click}></div>
+      const hidden = this.props.hidden ? 'hidden' : null
+      const matched = this.props.matched ? 'matched' : null
+      return <div id='card' className='memorysquare' onClick={this._click}>
+        <div className={[this.props.move, hidden, matched].join(' ')}></div>
+        </div>
     }
   }
 

@@ -5,6 +5,9 @@ body {
   flex-direction: column;
   align-items: center;
   height: 100vh;
+  background-image: url('images/planetbackground.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .memorygame {
@@ -12,8 +15,6 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  background-color: black;
-  border-radius: 10px;
   width: 470px;
   height: 450px;
 }
@@ -26,23 +27,31 @@ body {
   border-radius: 5px;
   width: 100px;
   height: 100px;
-  background-color: lightgreen;
+  background-color: rgba(109, 26, 228, 0.4);
 }
 
 .memorysquare{
-  background-image: url('images/basket.png');
+  height: 75px;
+  width: 75px;
   background-repeat: no-repeat;
-  background-size: auto;
   background-position: center;
   /*height: 20px;
   width: 20px;*/
 }
 
+.matched {
+  background-color: blue;
+}
+
+.hidden:not(.matched) {
+  display: none;
+}
+
 
 /*icons*/
 
-.revealed.apple {
-  background-image: url('images/apple.png');
+.alien1 {
+  background-image: url('images/alien1.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -50,8 +59,8 @@ body {
   width: 75px;
 }
 
-.revealed.aubergine {
-  background-image: url('images/aubergine.png');
+.alien2 {
+  background-image: url('images/alien2.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -59,8 +68,8 @@ body {
   width: 75px;
 }
 
-.revealed.carrot {
-  background-image: url('images/carrot.png');
+.alien3 {
+  background-image: url('images/alien3.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -68,8 +77,8 @@ body {
   width: 75px;
 }
 
-.revealed.cherry {
-  background-image: url('images/cherry.png');
+.alien4 {
+  background-image: url('images/alien4.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -77,8 +86,8 @@ body {
   width: 75px;
 }
 
-.revealed.grape {
-  background-image: url('images/grapes.png');
+.alien5 {
+  background-image: url('images/alien5.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -86,8 +95,8 @@ body {
   width: 75px;
 }
 
-.revealed.kiwi {
-  background-image: url('images/kiwi.png');
+.alien6 {
+  background-image: url('images/alien6.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -95,8 +104,8 @@ body {
   width: 75px;
 }
 
-.revealed.lemon {
-  background-image: url('images/lemon.png');
+.alien7 {
+  background-image: url('images/alien7.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -104,8 +113,8 @@ body {
   width: 75px;
 }
 
-.revealed.orange {
-  background-image: url('images/orange.png');
+.alien8 {
+  background-image: url('images/alien8.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
