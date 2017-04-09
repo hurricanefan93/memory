@@ -7,6 +7,9 @@ class App extends Component {
     return (
         <div className='memorygame'>
           <Board />
+          <form>
+          <button className='reset'> RESET </button>
+          </form>
         </div>
     )
   }

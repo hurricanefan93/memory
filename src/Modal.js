@@ -7,7 +7,9 @@ render () {
     <div className='overlay'>
       <div className='dialog'>
         <h3>GAME OVER</h3>
+        <form>
         <button>Play Again</button>
+        </form>
       </div>
     </div>
   )

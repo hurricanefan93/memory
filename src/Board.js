@@ -44,7 +44,7 @@ class Board extends Component {
       this.setState({
         picks: []
       })
-    }, )
+    }, 1000)
   }
 
 

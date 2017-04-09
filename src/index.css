@@ -40,15 +40,28 @@ body {
 }
 
 .matched {
-  background-color: blue;
+background-color: rgba(105, 224, 33, 0.72);
+border-style: outset;
+border-width: thick;
+border-color: white;
 }
 
 .hidden:not(.matched) {
   display: none;
 }
 
+.reset {
+  margin-top: 40px;
+  background-color: rgba(238, 238, 238, 0.71);
+  border-radius: 10px;
+  border: none;
+  color: rgb(133, 4, 247);
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1em;
+}
 .dialog {
-  background-color: rgba(81, 203, 181, 0.84);
+  background-color: rgba(238, 238, 238, 0.71);
   padding: 1em;
   display: flex;
   flex-direction: column;
