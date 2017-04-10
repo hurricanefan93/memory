@@ -10,6 +10,7 @@
     "react-scripts": "0.9.5"
   },
   "scripts": {
+    "deploy": "npm run build && surge ./build --domain Memory.garretmorales.surge.sh",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
